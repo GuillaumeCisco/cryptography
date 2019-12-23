@@ -163,6 +163,9 @@ EVP_PKEY *EVP_PKEY_new_raw_public_key(int, ENGINE *, const unsigned char *,
                                       size_t);
 int EVP_PKEY_get_raw_private_key(const EVP_PKEY *, unsigned char *, size_t *);
 int EVP_PKEY_get_raw_public_key(const EVP_PKEY *, unsigned char *, size_t *);
+
+void * EVP_PKEY_CTX_get_data(EVP_PKEY_CTX *);
+
 """
 
 CUSTOMIZATIONS = """
