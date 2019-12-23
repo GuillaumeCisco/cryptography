@@ -166,7 +166,7 @@ int EVP_PKEY_get_raw_public_key(const EVP_PKEY *, unsigned char *, size_t *);
 
 void * EVP_PKEY_CTX_get_data(EVP_PKEY_CTX *);
 EVP_PKEY * EVP_PKEY_CTX_get0_peerkey(EVP_PKEY_CTX *);
-EC_KEY * EVP_PKEY_get0_EC_KEY(EVP_PKEY *)
+EC_KEY * EVP_PKEY_get0_EC_KEY(EVP_PKEY *);
 
 """
 
