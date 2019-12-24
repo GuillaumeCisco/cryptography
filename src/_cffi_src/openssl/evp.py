@@ -169,6 +169,9 @@ EVP_PKEY * EVP_PKEY_CTX_get0_pkey(EVP_PKEY_CTX *);
 EVP_PKEY * EVP_PKEY_CTX_get0_peerkey(EVP_PKEY_CTX *);
 EC_KEY * EVP_PKEY_get0_EC_KEY(EVP_PKEY *);
 
+static int ecx_get_priv_key(const EVP_PKEY *, unsigned char *, size_t *);
+static int ecx_get_pub_key(const EVP_PKEY *, unsigned char *, size_t *);
+
 """
 
 CUSTOMIZATIONS = """
